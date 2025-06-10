@@ -1,0 +1,119 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f2f2f2, #d3e0ea);
+  color: #333;
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  transition: 0.3s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #3a506b;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 200px;
+  padding: 15px;
+  border: 2px solid #3a506b;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+  background: white;
+  color: #333;
+}
+
+textarea:focus {
+  border-color: #5bc0be;
+  box-shadow: 0 0 5px rgba(91, 192, 190, 0.5);
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #3a506b;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5bc0be;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #1c2541;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #ffffffbb;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* 🔥 DARK MODE STYLES 🔥 */
+body.dark-mode {
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+  color: #f0f0f0;
+}
+
+body.dark-mode h1 {
+  color: #ffffff;
+}
+
+body.dark-mode textarea {
+  background: #2a2a2a;
+  color: #f0f0f0;
+  border-color: #888;
+}
+
+body.dark-mode textarea:focus {
+  border-color: #00bfa6;
+  box-shadow: 0 0 5px rgba(0,191,166,0.4);
+}
+
+body.dark-mode button {
+  background-color: #00bfa6;
+}
+
+body.dark-mode button:hover {
+  background-color: #008f7a;
+}
+
+body.dark-mode h2 {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+#toggle-mode {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 14px;
+  background-color: #5bc0be;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: white;
+}
+
+body.dark-mode #toggle-mode {
+  background-color: #008f7a;
+}

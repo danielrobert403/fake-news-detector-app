@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fake News Detector 🧠🔥</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <button id="toggle-mode">🌙 Toggle Dark Mode</button>
+
+  <h1>🧠 Is This News Real or Cap?</h1>
+
+  <form method="POST">
+    <textarea name="news" placeholder="Paste your article text here..." required></textarea><br>
+    <button type="submit">Check</button>
+  </form>
+
+  {% if result %}
+    <h2>{{ result }}</h2>
+  {% endif %}
+
+  <script>
+    const toggleBtn = document.getElementById('toggle-mode');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
